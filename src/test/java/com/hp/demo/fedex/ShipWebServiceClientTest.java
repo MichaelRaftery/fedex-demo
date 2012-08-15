@@ -57,4 +57,14 @@ public class ShipWebServiceClientTest {
         Assert.assertEquals(detail.getMeterNumber(), meterNumber);
     }
 
+    @Test
+    public void testGetPayorAccountNumber() {
+        Assert.assertEquals(ShipWebServiceClient.getPayorAccountNumber(), "510087720");
+
+        final String payorAccountNumber = "20121002";
+        System.setProperty("Payor.AccountNumber", payorAccountNumber);
+        Assert.assertEquals(ShipWebServiceClient.getPayorAccountNumber(), payorAccountNumber);
+    }
+
+
 }

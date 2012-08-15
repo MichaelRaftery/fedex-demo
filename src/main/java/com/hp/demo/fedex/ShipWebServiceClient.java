@@ -265,7 +265,7 @@ public class ShipWebServiceClient
         }
     }
     
-    private static String getPayorAccountNumber() {
+    static String getPayorAccountNumber() {
         // See if payor account number is set as system property,
         // if not default it to "XXX"
         String payorAccountNumber = System.getProperty("Payor.AccountNumber");
