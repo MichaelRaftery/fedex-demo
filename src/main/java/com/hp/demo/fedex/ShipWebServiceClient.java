@@ -287,7 +287,7 @@ public class ShipWebServiceClient
          return false;
     }
     
-    private static ClientDetail createClientDetail() {
+    static ClientDetail createClientDetail() {
         ClientDetail clientDetail = new ClientDetail();
         String accountNumber = System.getProperty("accountNumber");
         String meterNumber = System.getProperty("meterNumber");

@@ -1,5 +1,6 @@
 package com.hp.demo.fedex;
 
+import com.fedex.ship.stub.ClientDetail;
 import com.fedex.ship.stub.ShipServiceLocator;
 import com.fedex.ship.stub.WebAuthenticationDetail;
 import junit.framework.Assert;
@@ -39,4 +40,21 @@ public class ShipWebServiceClientTest {
         Assert.assertEquals(detail.getUserCredential().getKey(), key);
         Assert.assertEquals(detail.getUserCredential().getPassword(), password);
     }
+
+    @Test
+    public void testCreateClientDetail() {
+        ClientDetail detail = ShipWebServiceClient.createClientDetail();
+        Assert.assertEquals(detail.getAccountNumber(), "510087720");
+        Assert.assertEquals(detail.getMeterNumber(), "118542640");
+
+        final String accountNumber = "20101021";
+        final String meterNumber = "19651170";
+
+        System.setProperty("accountNumber", accountNumber);
+        System.setProperty("meterNumber", meterNumber);
+        detail = ShipWebServiceClient.createClientDetail();
+        Assert.assertEquals(detail.getAccountNumber(), accountNumber);
+        Assert.assertEquals(detail.getMeterNumber(), meterNumber);
+    }
+
 }
