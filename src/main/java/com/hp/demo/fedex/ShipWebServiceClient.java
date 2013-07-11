@@ -19,6 +19,7 @@ import java.util.Calendar;
  * 
  * This sample code has been tested with JDK 5 and Apache Axis 1.4
  */
+// a change fixes defect #1
 //
 //Sample code to call the FedEx Ship Service - Domestic Express
 //
