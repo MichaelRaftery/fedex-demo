@@ -26,7 +26,7 @@ import java.util.Calendar;
 // fifth change
 //
 //Sample code to call the FedEx Ship Service - Domestic Express
-//test 11032014 blabla aaa
+//test 11032014 blabla aaabbb
 public class ShipWebServiceClient 
 {
     public static final String LABEL_LOCATION;
