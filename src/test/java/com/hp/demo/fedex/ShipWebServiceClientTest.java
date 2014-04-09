@@ -1,15 +1,12 @@
 package com.hp.demo.fedex;
-//added commant
-//new line
 
-//verify sync
-// new
+
 import com.fedex.ship.stub.ClientDetail;
 import com.fedex.ship.stub.ShipServiceLocator;
 import com.fedex.ship.stub.WebAuthenticationDetail;
 import junit.framework.Assert;
 import org.junit.Test;
-
+// new comment
 /**
  * Created by panuska on 8/10/12.
  */
