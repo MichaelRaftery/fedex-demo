@@ -92,7 +92,7 @@ public class ShipWebServiceClient
         Contact shipperContact = new Contact();
         shipperContact.setPersonName("Sender Name");
         shipperContact.setCompanyName("Sender Company Name");
-        shipperContact.setPhoneNumber("3127679903");
+        shipperContact.setPhoneNumber("3127679987");
         Address shipperAddress = new Address();
         shipperAddress.setStreetLines(new String[] {"Address Line 1"});
         shipperAddress.setCity("Austin");
