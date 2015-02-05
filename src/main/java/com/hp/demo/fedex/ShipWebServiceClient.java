@@ -21,7 +21,7 @@ import java.util.Calendar;
  * 
  * This sample code has been tested with JDK 5 and Apache Axis 1.4
  */
-// Comment lines have been removed
+// Comment lines have been removed!
 public class ShipWebServiceClient 
 {
     public static final String LABEL_LOCATION;
