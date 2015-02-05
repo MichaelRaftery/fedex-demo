@@ -9,6 +9,8 @@ import java.io.FileOutputStream;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
+
+
 /** 
  * Sample code to call the FedEx Ship Service
  * <p>
@@ -19,16 +21,7 @@ import java.util.Calendar;
  * 
  * This sample code has been tested with JDK 5 and Apache Axis 1.4
  */
-// a change fixes defect #1
-// second change
-// third change
-// fourth change
-// fifth change
-// one more
-// Change to test ALI integration fix
-//
-//Sample code to call the FedEx Ship Service - Domestic Express
-//test 11032014 blabla aaabbb
+// Comment lines have been removed
 public class ShipWebServiceClient 
 {
     public static final String LABEL_LOCATION;
