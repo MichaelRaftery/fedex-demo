@@ -1,11 +1,17 @@
 package com.hp.demo.fedex;
 
 
-import com.fedex.ship.stub.ClientDetail;
+import java.math.BigDecimal;
+
+import com.fedex.ship.stub.ClientDetail; 
+import com.fedex.ship.stub.RequestedShipment; 
 import com.fedex.ship.stub.ShipServiceLocator;
-import com.fedex.ship.stub.WebAuthenticationDetail;
+import com.fedex.ship.stub.ShippingDocumentImageType; 
+import com.fedex.ship.stub.WebAuthenticationDetail; 
+import com.fedex.ship.stub.ProcessShipmentRequest; 
 import junit.framework.Assert;
 import org.junit.Test;
+
 // new comment
 /*
  * Created by panuska on 8/10/12.
@@ -67,5 +73,19 @@ public class ShipWebServiceClientTest {
         Assert.assertEquals(ShipWebServiceClient.getPayorAccountNumber(), payorAccountNumber);
     }
 
+    @Test
+
+    public void testBuildRequest() {
+
+    	ProcessShipmentRequest request = ShipWebServiceClient.buildRequest();
+
+
+
+
+    	Assert.assertEquals(request.getTransactionDetail().getCustomerTransactionId(), "java sample - Domestic Express Ship Request");
+
+    	Assert.assertEquals(request.getVersion().getServiceId(), "ship");  RequestedShipment shipment = request.getRequestedShipment(); Assert.assertEquals(shipment.getTotalWeight().getValue(),    BigDecimal.valueOf(50));
+    	Assert.assertEquals(shipment.getShipper().getContact().getPhoneNumber(),    "0805522713"); Assert.assertEquals(shipment.getRecipient().getAddress().getCity(),    "Windsor"); Assert.assertEquals(shipment.getLabelSpecification().getImageType(),     ShippingDocumentImageType.PDF);
+    }
 
 }

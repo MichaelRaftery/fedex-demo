@@ -65,7 +65,7 @@ public class ShipWebServiceClient
         } 
     }
     
-    private static ProcessShipmentRequest buildRequest()
+    static ProcessShipmentRequest buildRequest()
     {
         ProcessShipmentRequest request = new ProcessShipmentRequest(); // Build a request object
 
