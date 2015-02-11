@@ -9,15 +9,6 @@ import java.io.FileOutputStream;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
-import java.math.BigDecimal; 
-import com.fedex.ship.stub.ClientDetail; 
-import com.fedex.ship.stub.RequestedShipment; 
-import com.fedex.ship.stub.ShipServiceLocator; 
-import com.fedex.ship.stub.ShippingDocumentImageType; 
-import com.fedex.ship.stub.WebAuthenticationDetail; 
-import com.fedex.ship.stub.ProcessShipmentRequest; 
-import junit.framework.Assert; 
-import org.junit.Test; 
 
 
 /** 
@@ -65,7 +56,7 @@ public class ShipWebServiceClient
         } 
     }
     
-    static ProcessShipmentRequest buildRequest()
+    private static ProcessShipmentRequest buildRequest()
     {
         ProcessShipmentRequest request = new ProcessShipmentRequest(); // Build a request object
 
