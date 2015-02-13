@@ -1,5 +1,11 @@
 package com.hp.demo.fedex;
-
+/*
+************************************************************
+*   Fedex Demo application                                 *
+*   Author: Mike Raftery                                   *
+*   Created: February 2015                                 *
+************************************************************
+*/
 import com.fedex.ship.stub.*;
 import org.apache.axis.types.NonNegativeInteger;
 import org.apache.axis.types.PositiveInteger;
