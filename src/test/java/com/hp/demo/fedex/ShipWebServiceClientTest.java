@@ -1,8 +1,16 @@
 package com.hp.demo.fedex;
 
 
-import java.math.BigDecimal;
+import com.fedex.ship.stub.ClientDetail; 
+import com.fedex.ship.stub.ShipServiceLocator;
+import com.fedex.ship.stub.WebAuthenticationDetail; 
+import junit.framework.Assert;
+import org.junit.Test;
 
+/*
+Replace the above imports with the following to improve code coverage
+
+import java.math.BigDecimal;
 import com.fedex.ship.stub.ClientDetail; 
 import com.fedex.ship.stub.RequestedShipment; 
 import com.fedex.ship.stub.ShipServiceLocator;
@@ -11,10 +19,12 @@ import com.fedex.ship.stub.WebAuthenticationDetail;
 import com.fedex.ship.stub.ProcessShipmentRequest; 
 import junit.framework.Assert;
 import org.junit.Test;
+*/
 
 /*
- * Created by panuska on 8/10/12.
- */
+* Created by panuska on 8/10/12.
+*/
+
 public class ShipWebServiceClientTest {
 
     @Test
